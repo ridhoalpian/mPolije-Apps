@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">m-Polije</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_menu_1">Politeknik Negeri Jember</string>
+    <string name="title_menu_2">Jurusan Teknologi Informasi</string>
+    <string name="title_menu_3">Teknik Informatika</string>
+    <string name="title_menu_4">Tim Kami</string>
+    <string name="desc_menu_1">Politeknik Negeri Jember merupakan perguruan tinggi yang menyelenggarakan pendidikan vokasional.</string>
+    <string name="desc_menu_2">Jurusan Teknologi Informasi terdiri dari 4 Program Studi yaitu Teknik Infomatika, Teknik Komputer, Manajemen Informatika dan Bisnis Digital.</string>
+    <string name="desc_menu_3">Teknik Informatika adalah bidang ilmu yang mempelajari penggunaan komputer dan teknologi informasi untuk memecahkan masalah, mengelola informasi, dan mengembangkan solusi teknologi.</string>
+    <string name="desc_menu_4">Terdiri dari Divaldo Grizzeld Santoso (E41221119), Muhammad Farhan Mahbubi Ainur Rofiq (E41221152), Ridho Alpian (E41221511).</string>
+    <string name="learn_now">Login Sekarang</string>
+    <string name="gambar_kurikulum_global">Gambar kurikulum Global</string>
+    <string name="gambar_belajar_fleksibel">Gambar belajar fleksibel</string>
+    <string name="gambar_code_reviewer">Gambar code reviewer</string>
+    <string name="gambar_alumni_terpercaya">Gambar alumni terpercaya</string>
+    <string name="gambar_dicoding">Gambar dicoding</string>
+
+</resources>

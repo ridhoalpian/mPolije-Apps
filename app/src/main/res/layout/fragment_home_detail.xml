@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.Detaill">
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/company"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round1" />
+
+    <ImageView
+        android:id="@+id/garis2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round1" />
+
+    <ImageView
+        android:id="@+id/gambarcamera"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/garis"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outline_camera_alt_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum Ada Postingan"
+        android:layout_marginTop="0dp"
+        android:textSize="24sp"
+        android:textColor="#BDBDBD"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:layout_below="@id/gambarcamera"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_alignStart="@+id/image"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:layout_constraintVertical_bias="0.223"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:layout_constraintVertical_bias="0.223"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_alignStart="@+id/image"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama"
+        tools:text="@tools:sample/full_names" />
+
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_alignStart="@+id/location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="15sp"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Following"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="11" />
+
+    <TextView
+        android:id="@+id/repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="11" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Repository"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Followers"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="11"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/image"
+        android:layout_alignTop="@+id/image"
+        android:layout_alignEnd="@+id/image"
+        android:layout_alignBottom="@+id/image"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:tint="@color/white" />
+
+</RelativeLayout>

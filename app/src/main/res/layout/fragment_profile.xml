@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tmptkerja"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round1" />
+
+    <ImageView
+        android:id="@+id/garis2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/profileUsergithub"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round1" />
+
+    <ImageView
+        android:id="@+id/gambarcamera"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/garis"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outline_camera_alt_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum Ada Postingan"
+        android:layout_marginTop="0dp"
+        android:textSize="24sp"
+        android:textColor="#BDBDBD"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:layout_below="@id/gambarcamera"/>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/profileRealname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_alignStart="@+id/profileImage"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileImage"
+        app:layout_constraintVertical_bias="0.223"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/profileUsergithub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileImage"
+        app:layout_constraintVertical_bias="0.223"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileRealname"
+        android:layout_alignStart="@+id/profileImage"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileRealname"
+        tools:text="@tools:sample/full_names" />
+
+
+    <TextView
+        android:id="@+id/tmptkerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:layout_alignStart="@+id/alamat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="15sp"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profileImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Following"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/flwing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/jmlrepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="11" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Repository"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Followers"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/flwr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignStart="@+id/profileImage"-->
+<!--        android:layout_alignTop="@+id/profileImage"-->
+<!--        android:layout_alignEnd="@+id/profileImage"-->
+<!--        android:layout_alignBottom="@+id/profileImage"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_1"
+        android:text="Keluar"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

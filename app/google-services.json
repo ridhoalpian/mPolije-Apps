@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087712915004",
+    "project_id": "team4-a8d66",
+    "storage_bucket": "team4-a8d66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087712915004:android:cbaac35bbfd25a9a249d39",
+        "android_client_info": {
+          "package_name": "com.example.teamapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJmluTdy5jfW80ATh_vFPHwDJgI5Glqk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

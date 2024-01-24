@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_centerInParent="true"
+    tools:context=".ui.LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/logopolije"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/logo_polije_putih" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logopolije"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Selamat Datang!"
+        android:textAlignment="center"
+        android:textColor="#272727"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/txt_perintah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_welcome"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Login! untuk mengakses layanan kami"
+        android:textAlignment="center"
+        android:textColor="#515151"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_perintah"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="20sp"
+            android:background="@drawable/button_1"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_1"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Password"
+            android:paddingLeft="20dp"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_2"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lin_1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_daftardulu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Daftar"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
